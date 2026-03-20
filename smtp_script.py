@@ -13,7 +13,8 @@ EMAIL = "rajarshimandal.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
-data = pd.read_csv("test_csv.csv")
+data = pd.read_csv("test_csv.csv",encoding='utf-8')
+data.columns=data.columns.str.strip()
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
