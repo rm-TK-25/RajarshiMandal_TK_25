@@ -1,4 +1,6 @@
+name: Send Emails
 
+on:
   # This allows the Google Script to trigger it
   repository_dispatch:
     types: [trigger-sponsorship-mail]
