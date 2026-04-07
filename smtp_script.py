@@ -155,7 +155,7 @@ def send_emails():
             
             html_content = html_template.format(
                 recipient_name=row['Name'],
-                # company=row['Company'],
+                company=row['Company'],
                 brochure_link = BROCHURE_URL,
                 tk_logo_url = TK_LOGO_URL,
                 your_name = YOUR_NAME,
