@@ -148,7 +148,7 @@ def send_emails():
             msg["From"] = formataddr((YOUR_NAME, EMAIL))
             msg["To"] = row["Email"]
             msg["Cc"] = CC_EMAILS
-        	msg["Subject"] = SUBJECT
+            msg["Subject"] = SUBJECT
             msg["Message-ID"] = make_msgid(domain="gmail.com")
 
             html_template = HTML_HEAD+HTML_BODY+HTML_TAIL
