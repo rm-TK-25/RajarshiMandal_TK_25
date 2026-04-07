@@ -16,6 +16,8 @@ PASSWORD = os.environ.get("EMAIL_PASSWORD")
 data = pd.read_csv("test_csv.csv",encoding='utf-8')
 data.columns=data.columns.str.strip()
 
+CC_EMAILS = [ "basakshubhayu2006@gmail.com","shubhayubasak.teamkartkgp@gmail.com"]
+
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
 YOUR_NAME = "Rajarshi Mandal"
@@ -74,10 +76,18 @@ HTML_HEAD = """
 HTML_BODY = """
 <body>
     <div class="content">
-        <p>Dear {recipient_name},</p>
-        <p>My name is {your_name}, this is a trial mail.</p>
+        <p>Dear Sir/Madam,</p>
+        <p>My name is <strong>{your_name}</strong>, and I am a student at <strong>IIT Kharagpur</strong> and a member of our institute’s Formula Student team, <span class="highlight">TeamKART</span>. We are a long-standing student engineering initiative under the Department of Mechanical Engineering (active since 2008), focused on providing hands-on technical education through the complete design and manufacture of Formula-style race cars.</p>
 
+        <p>Over the years, the team has manufactured <strong>eight combustion vehicles</strong> and participated in <strong>three international and five national competitions </strong>, earning recognition for excellence—including a <strong>Top 10 finish at Formula Bharat 2023</strong> and <strong>3rd place in the Cost & Manufacturing Event</strong>. Building on this foundation, TeamKART has recently <strong>manufactured its first electric vehicle project series</strong> (KE-1 and subsequent models) and is currently working on optimizing our powertrain and battery systems.</p>
+
+        <p>Our primary objective is <strong>practical skill development</strong>. Students gain real-world exposure to engineering design and project execution—skills that strongly align with CSR goals related to technical education and employability. All technical learnings are documented to ensure long-term impact for future student batches.</p>
+
+        <p>As we undertake this technically intensive project, we are seeking <strong>CSR support</strong> from organizations whose initiatives focus on education and sustainability. Support from <strong>{company}</strong> would directly contribute to strengthening hands-on engineering education in India.</p>
+
+        <p>We would be grateful for the opportunity to share additional details and explore the potential scope of a CSR collaboration at your convenience.</p>
 """
+
 
 HTML_TAIL="""
         <p><strong>Kindly refer to:</strong></p>
