@@ -16,7 +16,7 @@ PASSWORD = os.environ.get("EMAIL_PASSWORD")
 data = pd.read_csv("test_csv.csv",encoding='utf-8')
 data.columns=data.columns.str.strip()
 
-CC_EMAILS = ["swastikyatnale.teamkartkgp@gmail.com"]
+CC_EMAILS = ["shubhayubasak.teamkartkgp@gmail.com"]
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
