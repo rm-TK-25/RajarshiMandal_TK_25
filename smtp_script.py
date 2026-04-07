@@ -147,8 +147,8 @@ def send_emails():
             msg = MIMEMultipart("alternative")
             msg["From"] = formataddr((YOUR_NAME, EMAIL))
             msg["To"] = row["Email"]
-			msg["Cc"] = CC_EMAILS
-            msg["Subject"] = SUBJECT
+            msg["Cc"] = CC_EMAILS
+        	msg["Subject"] = SUBJECT
             msg["Message-ID"] = make_msgid(domain="gmail.com")
 
             html_template = HTML_HEAD+HTML_BODY+HTML_TAIL
@@ -164,7 +164,7 @@ def send_emails():
                 your_role = YOUR_ROLE_TK,
                 your_contact = YOUR_CONTACT,
                 your_linkedin = YOUR_LINKED_IN,
-                your_facebook = YOUR_FACEBOOK
+        		your_facebook = YOUR_FACEBOOK
             )
 
             msg.attach(MIMEText(html_content, "html"))
