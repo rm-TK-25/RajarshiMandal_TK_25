@@ -147,6 +147,7 @@ def send_emails():
             msg = MIMEMultipart("alternative")
             msg["From"] = formataddr((YOUR_NAME, EMAIL))
             msg["To"] = row["Email"]
+	msg["Cc"] = ", ".join(CC_EMAILS)
             msg["Subject"] = SUBJECT
             msg["Message-ID"] = make_msgid(domain="gmail.com")
 
@@ -167,7 +168,8 @@ def send_emails():
             )
 
             msg.attach(MIMEText(html_content, "html"))
-            server.sendmail(EMAIL, row["Email"], msg.as_string())
+	        recipients = [row["Email"]] + CC_EMAILS
+            server.sendmail(EMAIL, recipients, msg.as_string())
             ist_now = datetime.now() + timedelta(hours=5, minutes=30)
             print(f"Sent email to {row['Email']} at {ist_now.strftime('%H:%M:%S')} IST")
             
@@ -180,3 +182,4 @@ def send_emails():
 
 if __name__ == "__main__":
     send_emails()
+
