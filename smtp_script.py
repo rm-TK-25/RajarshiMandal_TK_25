@@ -16,7 +16,7 @@ PASSWORD = os.environ.get("EMAIL_PASSWORD")
 data = pd.read_csv("test_csv.csv",encoding='utf-8')
 data.columns=data.columns.str.strip()
 
-CC_EMAILS = ["shubhayubasak.teamkartkgp@gmail.com"]
+CC_EMAILS = "shubhayubasak.teamkartkgp@gmail.com"
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
@@ -147,7 +147,7 @@ def send_emails():
             msg = MIMEMultipart("alternative")
             msg["From"] = formataddr((YOUR_NAME, EMAIL))
             msg["To"] = row["Email"]
-			msg["Cc"] = ", ".join(CC_EMAILS)
+			msg["Cc"] = CC_EMAILS
             msg["Subject"] = SUBJECT
             msg["Message-ID"] = make_msgid(domain="gmail.com")
 
