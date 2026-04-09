@@ -77,16 +77,22 @@ HTML_BODY = """
 <body>
     <div class="content">
         <p>Dear Sir/Madam,</p>
-        <p>My name is <strong>{your_name}</strong>, and I am a student at <strong>IIT Kharagpur</strong> and a member of our institute’s Formula Student team, <span class="highlight">TeamKART</span>. We are a long-standing student engineering initiative under the Department of Mechanical Engineering (active since 2008), focused on providing hands-on technical education through the complete design and manufacture of Formula-style race cars.</p>
 
-        <p>Over the years, the team has manufactured <strong>eight combustion vehicles</strong> and participated in <strong>three international and five national competitions </strong>, earning recognition for excellence—including a <strong>Top 10 finish at Formula Bharat 2023</strong> and <strong>3rd place in the Cost & Manufacturing Event</strong>. Building on this foundation, TeamKART has recently <strong>manufactured its first electric vehicle project series</strong> (KE-1 and subsequent models) and is currently working on optimizing our powertrain and battery systems.</p>
+        <p>I am <strong>{your_name}</strong>, a student at <strong>IIT Kharagpur</strong> and a member of TeamKART, the institute’s Formula Student team. <span class="highlight">TeamKART</span> is an academic engineering project under the Department of Mechanical Engineering, through which undergraduate students gain structured, hands-on exposure to engineering design, manufacturing, and system integration beyond the conventional classroom framework.
+</p>
 
-        <p>Our primary objective is <strong>practical skill development</strong>. Students gain real-world exposure to engineering design and project execution—skills that strongly align with CSR goals related to technical education and employability. All technical learnings are documented to ensure long-term impact for future student batches.</p>
+        <p>Since its inception in 2008, the initiative has enabled students to work on the complete development cycle of Formula-style race cars, resulting in the successful manufacture of eight combustion vehicles and participation in multiple national and international competitions. The project has consistently focused on engineering rigour, manufacturing discipline, and cost awareness. Building on this experience, the team undertook <strong>its first electric vehicle project series</strong> (KE-1 and subsequent models) and is now working on improving it.</p>
 
-        <p>As we undertake this technically intensive project, we are seeking <strong>CSR support</strong> from organizations whose initiatives focus on education and sustainability. Support from <strong>{company}</strong> would directly contribute to strengthening hands-on engineering education in India.</p>
+        <p>The intent of this initiative is educational impact. Students develop practical engineering skills, project ownership, and collaborative problem-solving abilities that are directly relevant to industry. All technical processes and learnings are systematically documented to ensure continuity and long-term benefit for future student cohorts.
+</p>
 
-        <p>We would be grateful for the opportunity to share additional details and explore the potential scope of a CSR collaboration at your convenience.</p>
+        <p>In this context, we are seeking <strong>CSR support</strong> from organisations committed to advancing technical education, skill development, and sustainability. Support from {company} would contribute directly to strengthening experiential learning outcomes for students at the institute.
+</p>
+
+        <p>We would welcome the opportunity to share further details regarding the initiative and discuss the possible scope of CSR engagement at your convenience.</p>.
+<p>Thank you for your time and consideration.</p>
 """
+
 
 
 HTML_TAIL="""
